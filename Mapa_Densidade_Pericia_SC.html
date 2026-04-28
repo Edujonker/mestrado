@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_65193244e057001f662bc0f36af6cc3e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_65193244e057001f662bc0f36af6cc3e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_65193244e057001f662bc0f36af6cc3e = L.map(
+                "map_65193244e057001f662bc0f36af6cc3e",
+                {
+                    center: [-27.24, -50.39],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8daac93e8e718a3cdec9a970aa46fc02 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8daac93e8e718a3cdec9a970aa46fc02.addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+            var circle_marker_ff61572338ec89f496cc2ff2ff365eba = L.circleMarker(
+                [-26.9195567, -49.0658025],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+        var popup_d232496bccad9501bb15f737c014d848 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd2aff430e6eb3d5fb27e585152a22eb = $(`<div id="html_dd2aff430e6eb3d5fb27e585152a22eb" style="width: 100.0%; height: 100.0%;">Cidade: BLUMENAU<br>Ativos: 1<br>Foco: Perícia Digital</div>`)[0];
+                popup_d232496bccad9501bb15f737c014d848.setContent(html_dd2aff430e6eb3d5fb27e585152a22eb);
+            
+        
+
+        circle_marker_ff61572338ec89f496cc2ff2ff365eba.bindPopup(popup_d232496bccad9501bb15f737c014d848)
+        ;
+
+        
+    
+    
+            var marker_55b87327002e8a24588e9e37d46f241e = L.marker(
+                [-26.9195567, -49.0658025],
+                {
+}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+            var div_icon_d6285703d04109066414a49cb0762ca2 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: sans-serif; color: black; font-weight: bold; font-size: 10pt; width: 150px;\"\u003e\n                                        BLUMENAU (Per\u00edcia)\u003cbr\u003e1 Impr.\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_55b87327002e8a24588e9e37d46f241e.setIcon(div_icon_d6285703d04109066414a49cb0762ca2);
+            
+    
+            var circle_marker_36d636b2c30aec450b3c1b95dcdd2d2c = L.circleMarker(
+                [43.7676064, 2.9490127],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+        var popup_add476d2761dd3030006956b6c17ae88 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79adb36273e12d8b68e015edf1ea6a4f = $(`<div id="html_79adb36273e12d8b68e015edf1ea6a4f" style="width: 100.0%; height: 100.0%;">Cidade: BRUSQUE<br>Ativos: 1<br>Foco: Perícia Digital</div>`)[0];
+                popup_add476d2761dd3030006956b6c17ae88.setContent(html_79adb36273e12d8b68e015edf1ea6a4f);
+            
+        
+
+        circle_marker_36d636b2c30aec450b3c1b95dcdd2d2c.bindPopup(popup_add476d2761dd3030006956b6c17ae88)
+        ;
+
+        
+    
+    
+            var marker_555855a888a6b421ea893c7e76345999 = L.marker(
+                [43.7676064, 2.9490127],
+                {
+}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+            var div_icon_a848f6e4cf71687a0a9b0f7491449ec0 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: sans-serif; color: black; font-weight: bold; font-size: 10pt; width: 150px;\"\u003e\n                                        BRUSQUE (Per\u00edcia)\u003cbr\u003e1 Impr.\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_555855a888a6b421ea893c7e76345999.setIcon(div_icon_a848f6e4cf71687a0a9b0f7491449ec0);
+            
+    
+            var circle_marker_b9aea39132a3c7d099333142cb75824a = L.circleMarker(
+                [-27.0922364, -52.6166878],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+        var popup_dbc46c5e14025bb7e638df93271428bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f153e6b2524377cfef00940ca59b81d6 = $(`<div id="html_f153e6b2524377cfef00940ca59b81d6" style="width: 100.0%; height: 100.0%;">Cidade: CHAPECO<br>Ativos: 1<br>Foco: Perícia Digital</div>`)[0];
+                popup_dbc46c5e14025bb7e638df93271428bd.setContent(html_f153e6b2524377cfef00940ca59b81d6);
+            
+        
+
+        circle_marker_b9aea39132a3c7d099333142cb75824a.bindPopup(popup_dbc46c5e14025bb7e638df93271428bd)
+        ;
+
+        
+    
+    
+            var marker_4e975dca97d19052e92ccc926ffe0da9 = L.marker(
+                [-27.0922364, -52.6166878],
+                {
+}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+            var div_icon_3401a99d702b65f4a644f3f2fc519959 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: sans-serif; color: black; font-weight: bold; font-size: 10pt; width: 150px;\"\u003e\n                                        CHAPECO (Per\u00edcia)\u003cbr\u003e1 Impr.\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_4e975dca97d19052e92ccc926ffe0da9.setIcon(div_icon_3401a99d702b65f4a644f3f2fc519959);
+            
+    
+            var circle_marker_5c7748ef08272a41b4211b2a26dac07b = L.circleMarker(
+                [31.3941887, -91.6714379],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+        var popup_5454d37e5289125a8e63ec4f3ae92d79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3828b63dca66581b5a8a9e31400687b4 = $(`<div id="html_3828b63dca66581b5a8a9e31400687b4" style="width: 100.0%; height: 100.0%;">Cidade: CONCORDIA<br>Ativos: 1<br>Foco: Perícia Digital</div>`)[0];
+                popup_5454d37e5289125a8e63ec4f3ae92d79.setContent(html_3828b63dca66581b5a8a9e31400687b4);
+            
+        
+
+        circle_marker_5c7748ef08272a41b4211b2a26dac07b.bindPopup(popup_5454d37e5289125a8e63ec4f3ae92d79)
+        ;
+
+        
+    
+    
+            var marker_0013a2b56765bac114dcaaede621e99b = L.marker(
+                [31.3941887, -91.6714379],
+                {
+}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+            var div_icon_ba8860556f743900cd7e6cdfc248e0e1 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: sans-serif; color: black; font-weight: bold; font-size: 10pt; width: 150px;\"\u003e\n                                        CONCORDIA (Per\u00edcia)\u003cbr\u003e1 Impr.\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_0013a2b56765bac114dcaaede621e99b.setIcon(div_icon_ba8860556f743900cd7e6cdfc248e0e1);
+            
+    
+            var circle_marker_9cb5ea319f547a35fd688e19ffd35325 = L.circleMarker(
+                [-28.6789941, -49.3695627],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+        var popup_695963cb512669d582eec3d6f92ab318 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14d4c29fdbcd7fc2aa555bff5a4b1875 = $(`<div id="html_14d4c29fdbcd7fc2aa555bff5a4b1875" style="width: 100.0%; height: 100.0%;">Cidade: CRICIUMA<br>Ativos: 1<br>Foco: Perícia Digital</div>`)[0];
+                popup_695963cb512669d582eec3d6f92ab318.setContent(html_14d4c29fdbcd7fc2aa555bff5a4b1875);
+            
+        
+
+        circle_marker_9cb5ea319f547a35fd688e19ffd35325.bindPopup(popup_695963cb512669d582eec3d6f92ab318)
+        ;
+
+        
+    
+    
+            var marker_f518914ecc6096f805c2a7318f8f9edc = L.marker(
+                [-28.6789941, -49.3695627],
+                {
+}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+            var div_icon_88a02968e3cf55df5e35a10269ff64ba = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: sans-serif; color: black; font-weight: bold; font-size: 10pt; width: 150px;\"\u003e\n                                        CRICIUMA (Per\u00edcia)\u003cbr\u003e1 Impr.\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_f518914ecc6096f805c2a7318f8f9edc.setIcon(div_icon_88a02968e3cf55df5e35a10269ff64ba);
+            
+    
+            var circle_marker_988193ca38114127ca2a6bee012eba9b = L.circleMarker(
+                [-27.2900659, -50.5779683],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+        var popup_6dd25492ce73a23b9158be193e6167db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1748306fe09625511e834e8252b65986 = $(`<div id="html_1748306fe09625511e834e8252b65986" style="width: 100.0%; height: 100.0%;">Cidade: CURITIBANOS<br>Ativos: 1<br>Foco: Perícia Digital</div>`)[0];
+                popup_6dd25492ce73a23b9158be193e6167db.setContent(html_1748306fe09625511e834e8252b65986);
+            
+        
+
+        circle_marker_988193ca38114127ca2a6bee012eba9b.bindPopup(popup_6dd25492ce73a23b9158be193e6167db)
+        ;
+
+        
+    
+    
+            var marker_934ab007cd79fe4d36591e405afe8eba = L.marker(
+                [-27.2900659, -50.5779683],
+                {
+}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+            var div_icon_250c4a0b79fd80d93c4e365191f4e60f = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: sans-serif; color: black; font-weight: bold; font-size: 10pt; width: 150px;\"\u003e\n                                        CURITIBANOS (Per\u00edcia)\u003cbr\u003e1 Impr.\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_934ab007cd79fe4d36591e405afe8eba.setIcon(div_icon_250c4a0b79fd80d93c4e365191f4e60f);
+            
+    
+            var circle_marker_b14138a3a45a6d1f4a8e674d8182296e = L.circleMarker(
+                [-27.5973002, -48.5496098],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 75.0, "stroke": true, "weight": 3}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+        var popup_b8cb7dd546c65eb230b6711495e4f38b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd13f595b93c1736db28b3f8da22f9b3 = $(`<div id="html_fd13f595b93c1736db28b3f8da22f9b3" style="width: 100.0%; height: 100.0%;">Cidade: FLORIANOPOLIS<br>Ativos: 25<br>Foco: Perícia Digital</div>`)[0];
+                popup_b8cb7dd546c65eb230b6711495e4f38b.setContent(html_fd13f595b93c1736db28b3f8da22f9b3);
+            
+        
+
+        circle_marker_b14138a3a45a6d1f4a8e674d8182296e.bindPopup(popup_b8cb7dd546c65eb230b6711495e4f38b)
+        ;
+
+        
+    
+    
+            var marker_6a3f41c5eff99cee7dd0c77afc387c7a = L.marker(
+                [-27.5973002, -48.5496098],
+                {
+}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+            var div_icon_ab6411e12a842268eed73a28fa792a2e = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: sans-serif; color: black; font-weight: bold; font-size: 10pt; width: 150px;\"\u003e\n                                        FLORIANOPOLIS (Per\u00edcia)\u003cbr\u003e25 Impr.\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_6a3f41c5eff99cee7dd0c77afc387c7a.setIcon(div_icon_ab6411e12a842268eed73a28fa792a2e);
+            
+    
+            var circle_marker_ad4a5cc4cfc2811d9549d361939943d7 = L.circleMarker(
+                [-28.241827, -48.6643444],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+        var popup_fb3c5b4ff5cc5f7c8747b4ca3ec2382e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9228f7702f0804ef9234e470a527c714 = $(`<div id="html_9228f7702f0804ef9234e470a527c714" style="width: 100.0%; height: 100.0%;">Cidade: IMBITUBA<br>Ativos: 1<br>Foco: Perícia Digital</div>`)[0];
+                popup_fb3c5b4ff5cc5f7c8747b4ca3ec2382e.setContent(html_9228f7702f0804ef9234e470a527c714);
+            
+        
+
+        circle_marker_ad4a5cc4cfc2811d9549d361939943d7.bindPopup(popup_fb3c5b4ff5cc5f7c8747b4ca3ec2382e)
+        ;
+
+        
+    
+    
+            var marker_b3b9e3a89cfa115a626c29b789c6f6be = L.marker(
+                [-28.241827, -48.6643444],
+                {
+}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+            var div_icon_67fc16ed7df715905735103cb3d68433 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: sans-serif; color: black; font-weight: bold; font-size: 10pt; width: 150px;\"\u003e\n                                        IMBITUBA (Per\u00edcia)\u003cbr\u003e1 Impr.\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_b3b9e3a89cfa115a626c29b789c6f6be.setIcon(div_icon_67fc16ed7df715905735103cb3d68433);
+            
+    
+            var circle_marker_9b4b5a49626ff9507c0315a8c2d6b02e = L.circleMarker(
+                [-26.9046787, -48.6552979],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+        var popup_7f512835304c6bb9a6be3c4d0c7c2ebf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6937828dd81573a99a42bc188c7197de = $(`<div id="html_6937828dd81573a99a42bc188c7197de" style="width: 100.0%; height: 100.0%;">Cidade: ITAJAI<br>Ativos: 1<br>Foco: Perícia Digital</div>`)[0];
+                popup_7f512835304c6bb9a6be3c4d0c7c2ebf.setContent(html_6937828dd81573a99a42bc188c7197de);
+            
+        
+
+        circle_marker_9b4b5a49626ff9507c0315a8c2d6b02e.bindPopup(popup_7f512835304c6bb9a6be3c4d0c7c2ebf)
+        ;
+
+        
+    
+    
+            var marker_fd512a02b755a4c49efef1ac1a0feaba = L.marker(
+                [-26.9046787, -48.6552979],
+                {
+}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+            var div_icon_2d776a11ae633df1e23fc34a40fe191c = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: sans-serif; color: black; font-weight: bold; font-size: 10pt; width: 150px;\"\u003e\n                                        ITAJAI (Per\u00edcia)\u003cbr\u003e1 Impr.\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_fd512a02b755a4c49efef1ac1a0feaba.setIcon(div_icon_2d776a11ae633df1e23fc34a40fe191c);
+            
+    
+            var circle_marker_718d7d0dee60edb4461aed09d6b2e325 = L.circleMarker(
+                [-26.4897432, -49.0778063],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+        var popup_027cfd692bfee2d45261c22d1c9d79be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eeb543c162aa00c5660559379aa63ec0 = $(`<div id="html_eeb543c162aa00c5660559379aa63ec0" style="width: 100.0%; height: 100.0%;">Cidade: JARAGUA DO SUL<br>Ativos: 1<br>Foco: Perícia Digital</div>`)[0];
+                popup_027cfd692bfee2d45261c22d1c9d79be.setContent(html_eeb543c162aa00c5660559379aa63ec0);
+            
+        
+
+        circle_marker_718d7d0dee60edb4461aed09d6b2e325.bindPopup(popup_027cfd692bfee2d45261c22d1c9d79be)
+        ;
+
+        
+    
+    
+            var marker_572513cbb7cfd8c12ddd69a84c960140 = L.marker(
+                [-26.4897432, -49.0778063],
+                {
+}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+            var div_icon_eb464f585072b5a2cc722f7e1f98efbc = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: sans-serif; color: black; font-weight: bold; font-size: 10pt; width: 150px;\"\u003e\n                                        JARAGUA DO SUL (Per\u00edcia)\u003cbr\u003e1 Impr.\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_572513cbb7cfd8c12ddd69a84c960140.setIcon(div_icon_eb464f585072b5a2cc722f7e1f98efbc);
+            
+    
+            var circle_marker_7e215fde772183a5744cc5e982667bab = L.circleMarker(
+                [-27.1737204, -51.5065214],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+        var popup_c5e32a0b5e1914c457fdaa07c57eea1b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3468fea6b7c65f5dadb462ab42a3cc0f = $(`<div id="html_3468fea6b7c65f5dadb462ab42a3cc0f" style="width: 100.0%; height: 100.0%;">Cidade: JOACABA<br>Ativos: 1<br>Foco: Perícia Digital</div>`)[0];
+                popup_c5e32a0b5e1914c457fdaa07c57eea1b.setContent(html_3468fea6b7c65f5dadb462ab42a3cc0f);
+            
+        
+
+        circle_marker_7e215fde772183a5744cc5e982667bab.bindPopup(popup_c5e32a0b5e1914c457fdaa07c57eea1b)
+        ;
+
+        
+    
+    
+            var marker_31e5994e6ba3b4eb780ecf8089a7afed = L.marker(
+                [-27.1737204, -51.5065214],
+                {
+}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+            var div_icon_66ad62439c9dd3d7edde0c31c5b3d348 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: sans-serif; color: black; font-weight: bold; font-size: 10pt; width: 150px;\"\u003e\n                                        JOACABA (Per\u00edcia)\u003cbr\u003e1 Impr.\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_31e5994e6ba3b4eb780ecf8089a7afed.setIcon(div_icon_66ad62439c9dd3d7edde0c31c5b3d348);
+            
+    
+            var circle_marker_3256893648b4d458e26a8a5d0dc1875a = L.circleMarker(
+                [48.4433253, 5.1377537],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+        var popup_a4055a1af98f85e38f7b91e41a911801 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39855ee8d6a8cf2ecbdcb9de08485cf0 = $(`<div id="html_39855ee8d6a8cf2ecbdcb9de08485cf0" style="width: 100.0%; height: 100.0%;">Cidade: JOINVILLE<br>Ativos: 1<br>Foco: Perícia Digital</div>`)[0];
+                popup_a4055a1af98f85e38f7b91e41a911801.setContent(html_39855ee8d6a8cf2ecbdcb9de08485cf0);
+            
+        
+
+        circle_marker_3256893648b4d458e26a8a5d0dc1875a.bindPopup(popup_a4055a1af98f85e38f7b91e41a911801)
+        ;
+
+        
+    
+    
+            var marker_9b45df5179a3a08da1dfa79308c29a22 = L.marker(
+                [48.4433253, 5.1377537],
+                {
+}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+            var div_icon_a84874bf7d65e9c09c0900ef61a533bc = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: sans-serif; color: black; font-weight: bold; font-size: 10pt; width: 150px;\"\u003e\n                                        JOINVILLE (Per\u00edcia)\u003cbr\u003e1 Impr.\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_9b45df5179a3a08da1dfa79308c29a22.setIcon(div_icon_a84874bf7d65e9c09c0900ef61a533bc);
+            
+    
+            var circle_marker_0f472046e3c5b78091152e28108b66ee = L.circleMarker(
+                [-27.8165664, -50.325883],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+        var popup_e3992b80ffb5fa1c8b840b4ee1ae42a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3adff006fd76e42e5ebe41d964f59b39 = $(`<div id="html_3adff006fd76e42e5ebe41d964f59b39" style="width: 100.0%; height: 100.0%;">Cidade: LAGES<br>Ativos: 1<br>Foco: Perícia Digital</div>`)[0];
+                popup_e3992b80ffb5fa1c8b840b4ee1ae42a8.setContent(html_3adff006fd76e42e5ebe41d964f59b39);
+            
+        
+
+        circle_marker_0f472046e3c5b78091152e28108b66ee.bindPopup(popup_e3992b80ffb5fa1c8b840b4ee1ae42a8)
+        ;
+
+        
+    
+    
+            var marker_7094a25e050a46cbdf0c4c5b675ca67b = L.marker(
+                [-27.8165664, -50.325883],
+                {
+}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+            var div_icon_817d34915deee5d158209650f939a8e7 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: sans-serif; color: black; font-weight: bold; font-size: 10pt; width: 150px;\"\u003e\n                                        LAGES (Per\u00edcia)\u003cbr\u003e1 Impr.\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_7094a25e050a46cbdf0c4c5b675ca67b.setIcon(div_icon_817d34915deee5d158209650f939a8e7);
+            
+    
+            var circle_marker_92aba391a29bf213cd73c0b4709c1a2a = L.circleMarker(
+                [38.9369782, -9.3282374],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+        var popup_8e1f3fe23c0d982d2cce7d13394cc16f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_904f1f388efb03d294548407e04b5ae9 = $(`<div id="html_904f1f388efb03d294548407e04b5ae9" style="width: 100.0%; height: 100.0%;">Cidade: MAFRA<br>Ativos: 1<br>Foco: Perícia Digital</div>`)[0];
+                popup_8e1f3fe23c0d982d2cce7d13394cc16f.setContent(html_904f1f388efb03d294548407e04b5ae9);
+            
+        
+
+        circle_marker_92aba391a29bf213cd73c0b4709c1a2a.bindPopup(popup_8e1f3fe23c0d982d2cce7d13394cc16f)
+        ;
+
+        
+    
+    
+            var marker_9367d1d477a97b3d361a4c249bdc23f6 = L.marker(
+                [38.9369782, -9.3282374],
+                {
+}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+            var div_icon_de37121590ddf862e81d78a4f5f1e951 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: sans-serif; color: black; font-weight: bold; font-size: 10pt; width: 150px;\"\u003e\n                                        MAFRA (Per\u00edcia)\u003cbr\u003e1 Impr.\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_9367d1d477a97b3d361a4c249bdc23f6.setIcon(div_icon_de37121590ddf862e81d78a4f5f1e951);
+            
+    
+            var circle_marker_ae9f1155b3bbef4369d9da901eb5bbf5 = L.circleMarker(
+                [-27.2162607, -49.643654],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+        var popup_d452f6cbc4f7751ddb00ca8746c3c139 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4cbfe97833642c685a93e2dfa3a6ff01 = $(`<div id="html_4cbfe97833642c685a93e2dfa3a6ff01" style="width: 100.0%; height: 100.0%;">Cidade: RIO DO SUL<br>Ativos: 1<br>Foco: Perícia Digital</div>`)[0];
+                popup_d452f6cbc4f7751ddb00ca8746c3c139.setContent(html_4cbfe97833642c685a93e2dfa3a6ff01);
+            
+        
+
+        circle_marker_ae9f1155b3bbef4369d9da901eb5bbf5.bindPopup(popup_d452f6cbc4f7751ddb00ca8746c3c139)
+        ;
+
+        
+    
+    
+            var marker_128a7e458432011996fe138d5f07a46f = L.marker(
+                [-27.2162607, -49.643654],
+                {
+}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+            var div_icon_94c3391a583e73a65201bb316da07d91 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: sans-serif; color: black; font-weight: bold; font-size: 10pt; width: 150px;\"\u003e\n                                        RIO DO SUL (Per\u00edcia)\u003cbr\u003e1 Impr.\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_128a7e458432011996fe138d5f07a46f.setIcon(div_icon_94c3391a583e73a65201bb316da07d91);
+            
+    
+            var circle_marker_f39f743608cde93af0c52ac41175895c = L.circleMarker(
+                [-26.7278977, -53.5176689],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+        var popup_a9314cf5924305fcb8874e1af6a480e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7066ebfa916b50e3e99bf00c206729ea = $(`<div id="html_7066ebfa916b50e3e99bf00c206729ea" style="width: 100.0%; height: 100.0%;">Cidade: SAO MIGUEL DO OESTE<br>Ativos: 1<br>Foco: Perícia Digital</div>`)[0];
+                popup_a9314cf5924305fcb8874e1af6a480e5.setContent(html_7066ebfa916b50e3e99bf00c206729ea);
+            
+        
+
+        circle_marker_f39f743608cde93af0c52ac41175895c.bindPopup(popup_a9314cf5924305fcb8874e1af6a480e5)
+        ;
+
+        
+    
+    
+            var marker_7909ed688460faf110fc5eda63a80622 = L.marker(
+                [-26.7278977, -53.5176689],
+                {
+}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+            var div_icon_42c76daf24456ca27b125da192546fdd = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: sans-serif; color: black; font-weight: bold; font-size: 10pt; width: 150px;\"\u003e\n                                        SAO MIGUEL DO OESTE (Per\u00edcia)\u003cbr\u003e1 Impr.\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_7909ed688460faf110fc5eda63a80622.setIcon(div_icon_42c76daf24456ca27b125da192546fdd);
+            
+    
+            var circle_marker_4ddd6ef09e8f8cb557ca3bf3fd23c766 = L.circleMarker(
+                [-28.471488, -49.014132],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+        var popup_ba0c0dbaaffb4334170d5602079a6422 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf65d9dc3d8de54a14abff6297d8aaff = $(`<div id="html_cf65d9dc3d8de54a14abff6297d8aaff" style="width: 100.0%; height: 100.0%;">Cidade: TUBARAO<br>Ativos: 1<br>Foco: Perícia Digital</div>`)[0];
+                popup_ba0c0dbaaffb4334170d5602079a6422.setContent(html_cf65d9dc3d8de54a14abff6297d8aaff);
+            
+        
+
+        circle_marker_4ddd6ef09e8f8cb557ca3bf3fd23c766.bindPopup(popup_ba0c0dbaaffb4334170d5602079a6422)
+        ;
+
+        
+    
+    
+            var marker_846ac40332840e37e9db2102762b0487 = L.marker(
+                [-28.471488, -49.014132],
+                {
+}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+            var div_icon_04b13de0bbc5c5e1f209a5e972407d7b = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: sans-serif; color: black; font-weight: bold; font-size: 10pt; width: 150px;\"\u003e\n                                        TUBARAO (Per\u00edcia)\u003cbr\u003e1 Impr.\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_846ac40332840e37e9db2102762b0487.setIcon(div_icon_04b13de0bbc5c5e1f209a5e972407d7b);
+            
+    
+            var circle_marker_d40a5c13c0f62802a49bc956059da11a = L.circleMarker(
+                [-27.00544, -51.1533733],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+        var popup_84397dcf85068343afee9ed09a5f4f5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4901ebbf8a190da6a08537608581552 = $(`<div id="html_f4901ebbf8a190da6a08537608581552" style="width: 100.0%; height: 100.0%;">Cidade: VIDEIRA<br>Ativos: 1<br>Foco: Perícia Digital</div>`)[0];
+                popup_84397dcf85068343afee9ed09a5f4f5b.setContent(html_f4901ebbf8a190da6a08537608581552);
+            
+        
+
+        circle_marker_d40a5c13c0f62802a49bc956059da11a.bindPopup(popup_84397dcf85068343afee9ed09a5f4f5b)
+        ;
+
+        
+    
+    
+            var marker_6f7c6fcc4caafe046e7c2f76440e38e7 = L.marker(
+                [-27.00544, -51.1533733],
+                {
+}
+            ).addTo(map_65193244e057001f662bc0f36af6cc3e);
+        
+    
+            var div_icon_c0bcc7a7f11997ccf0b441bec3bf8a01 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: sans-serif; color: black; font-weight: bold; font-size: 10pt; width: 150px;\"\u003e\n                                        VIDEIRA (Per\u00edcia)\u003cbr\u003e1 Impr.\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_6f7c6fcc4caafe046e7c2f76440e38e7.setIcon(div_icon_c0bcc7a7f11997ccf0b441bec3bf8a01);
+            
+</script>
+</html>
