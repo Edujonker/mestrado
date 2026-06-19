@@ -1,0 +1,6 @@
+pandas>=1.5.3,<3.0.0
+numpy>=2.4.6,<3.0.0
+matplotlib>=3.10
+scipy>=1.17
+fpdf>=1.7.2
+geopy>=2.4.1
