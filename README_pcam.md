@@ -1,6 +1,6 @@
 # PCAM Parallel Execution
 
-Este README descreve o novo script `otimizador_pcam.py`, que utiliza paralelismo para rodar componentes da metodologia PCAM sobre os dados de roteirização.
+Este README descreve o script `otimizador_pcam.py`, que utiliza paralelismo para rodar componentes da metodologia PCAM sobre os dados de roteirização.
 
 ## Objetivo
 
@@ -33,20 +33,21 @@ O script usa as mesmas dependências do `otimizador_impressao.py`, com versões 
 
 Recomendamos instalar em um ambiente virtual separado para não impactar outras bibliotecas instaladas no mesmo Python.
 
-```bash
+```powershell
 python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements_pcam.txt
+.\.venv\Scripts\python.exe -m pip install -r requirements_pcam.txt
 ```
 
-Se você já tiver outros pacotes instalados no ambiente global, não use `pip install pandas numpy matplotlib scipy fpdf geopy` diretamente, pois isso pode quebrar dependências de projetos existentes.
+Se a ativação do PowerShell estiver bloqueada, use diretamente o Python do ambiente virtual.
+
+Não use `pip install pandas numpy matplotlib scipy fpdf geopy` diretamente no ambiente global, pois isso pode quebrar dependências de outros projetos instalados.
 
 ## Como executar
 
-1. Certifique-se de que `log/distance_matrix.csv` já existe, gerado pelo `otimizador_impressao.py`.
+1. Certifique-se de que `log/distance_matrix.csv` e `log/route_nn.csv` já existem, gerados pelo `otimizador_impressao.py`.
 2. Execute:
 
-```bash
+```powershell
 python otimizador_pcam.py
 ```
 
